@@ -1,14 +1,18 @@
 import React, { Component } from 'react' 
 
 export default class Product extends Component {
-    constructor(){
-        super()
+    constructor(props){
+        super(props)
 
-        this.state = {
-            
-        }
     }
-    // render(){
-    //     return 
-    // }
+    render(){
+        const {name, price, img} = this.props.element 
+        return (
+            <div>
+                <h2>{name}</h2>
+                <h2>{price}</h2>
+                <img src={img}/>
+            </div>
+        )
+    }
 }

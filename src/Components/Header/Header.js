@@ -8,7 +8,11 @@ export default class Header extends Component {
             
         }
     }
-    // render(){
-    //     return 
-    // }
+    render(){
+        return (
+            <div>
+                <h1>Shelfie</h1>
+            </div>
+        )
+    }
 }
